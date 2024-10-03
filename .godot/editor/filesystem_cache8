@@ -1,0 +1,14 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1727978476
+icon.svg::CompressedTexture2D::8836681063080942398::1727978447::1727978476::1::::<><>::
+main.gd::GDScript::-1::1727978447::0::1::::<>TextureRect<>::
+main.tscn::PackedScene::116409114919175134::1727978447::0::1::::<><>::uid://lpxerspeq45k::::res://Background/istockphoto-1128211656-612x612.jpg<>res://main.gd
+::res://Background/::1727978447
+istockphoto-1128211656-612x612.jpg::CompressedTexture2D::60179428260820816::1727978447::1727978477::1::::<><>::
+::res://Fruits/::1727978447
+43-437034_clipart-fruit-cherries-cherry-cartoon-removebg-preview.png::CompressedTexture2D::5944512655360956908::1727978447::1727978477::1::::<><>::
+apple.tscn::PackedScene::747439114466477177::1727978447::0::1::::<><>::uid://cmab40vwg6gyn::::res://Fruits/kisspng-clip-art-drawing-portable-network-graphics-image-c-other-club-penguin-cutouts-5c3d8227646a92.3012681215475348874113-removebg-preview.png
+bananas.tscn::PackedScene::1902232486169419123::1727978447::0::1::::<><>::uid://uukucv5nlm05::::res://Fruits/pngtree-a-bunch-of-banana-cartoon-japanese-vector-material-image_2279826-removebg-preview.png
+cherries.tscn::PackedScene::125292398461075903::1727978447::0::1::::<><>::uid://cqxtiwx0vxcdw::::res://Fruits/43-437034_clipart-fruit-cherries-cherry-cartoon-removebg-preview.png
+kisspng-clip-art-drawing-portable-network-graphics-image-c-other-club-penguin-cutouts-5c3d8227646a92.3012681215475348874113-removebg-preview.png::CompressedTexture2D::5615221342592069037::1727978447::1727978477::1::::<><>::
+pngtree-a-bunch-of-banana-cartoon-japanese-vector-material-image_2279826-removebg-preview.png::CompressedTexture2D::1445707452516080968::1727978447::1727978477::1::::<><>::
