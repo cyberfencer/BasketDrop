@@ -2,6 +2,7 @@ extends TextureRect
 
 @export var time_low = 0.5
 @export var time_high = 1.5
+var score = 0
 
 @export var fruits = [preload("res://Fruits/apple.tscn"),preload("res://Fruits/bananas.tscn"),preload("res://Fruits/cherries.tscn")]
 # Called when the node enters the scene tree for the first time.
@@ -26,4 +27,23 @@ func _on_timer_timeout():
 func _on_area_2d_body_entered(body):
 	
 	body.queue_free()
+	pass # Replace with function body.
+
+func _on_player_hit():
+	print("Current node path:", get_path())
+	score += 1
+	var scorelabel = get_node("Main/ScoreLabel")
+	if scorelabel:
+		scorelabel.text = str(score)
+	else:
+		print("ScoreLabel node not found!")
+
+
+
+
+func _on_score_label_text_set():
+	pass # Replace with function body.
+
+
+func _on_player_scoreincrease():
 	pass # Replace with function body.
