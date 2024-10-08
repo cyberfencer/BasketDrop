@@ -1,5 +1,4 @@
 res://main.tscn
+res://main.gd
 res://player.tscn
 res://Fruits/cherries.tscn
-res://score.gd
-res://main.gd

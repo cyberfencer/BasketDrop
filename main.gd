@@ -30,9 +30,8 @@ func _on_area_2d_body_entered(body):
 	pass # Replace with function body.
 
 func _on_player_hit():
-	print("Current node path:", get_path())
 	score += 1
-	var scorelabel = get_node("Main/ScoreLabel")
+	var scorelabel = get_node("ScoreLabel/Label")
 	if scorelabel:
 		scorelabel.text = str(score)
 	else:
