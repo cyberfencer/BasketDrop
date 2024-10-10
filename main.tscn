@@ -14,6 +14,29 @@ texture = ExtResource("1_w6t0i")
 script = ExtResource("2_n74ed")
 metadata/_edit_lock_ = true
 
+[node name="TimeLabel" type="TextEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.225
+offset_left = 20.0
+offset_top = 12.0
+offset_right = -1062.0
+offset_bottom = -76.475
+
+[node name="Label" type="Label" parent="TimeLabel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.507
+anchor_bottom = 0.5
+offset_left = -4.5
+offset_top = -12.0
+offset_right = 7.017
+offset_bottom = 15.0
+text = "0"
+
 [node name="Player" parent="." instance=ExtResource("3_glwn8")]
 position = Vector2(573, 581)
 
@@ -38,25 +61,31 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 0.225
-offset_left = 540.0
-offset_top = 57.0
-offset_right = -562.0
-offset_bottom = -31.475
+offset_left = 564.0
+offset_top = 51.0
+offset_right = -518.0
+offset_bottom = -37.475
 
 [node name="Label" type="Label" parent="ScoreLabel"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.5
-anchor_right = 0.5
+anchor_right = 0.507
 anchor_bottom = 0.5
-offset_left = -524.5
-offset_top = 17.0
-offset_right = -512.5
-offset_bottom = 44.0
+offset_left = -4.5
+offset_top = -12.0
+offset_right = 7.017
+offset_bottom = 15.0
 text = "0"
 
+[node name="Scoretimer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="text_set" from="TimeLabel" to="." method="_on_time_label_text_set"]
+[connection signal="text_set" from="TimeLabel" to="." method="_on_score_label_text_set"]
 [connection signal="hit" from="Player" to="." method="_on_player_hit"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="text_set" from="ScoreLabel" to="." method="_on_score_label_text_set"]
+[connection signal="timeout" from="Scoretimer" to="." method="_on_scoretimer_timeout"]
